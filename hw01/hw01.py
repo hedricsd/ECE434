@@ -1,3 +1,5 @@
+#!/usr/bin/env python3 
+
 import numpy as np
 
 # Function that clears/sets up the array while keeping the current X and current Y value the same
