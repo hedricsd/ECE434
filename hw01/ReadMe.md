@@ -6,15 +6,15 @@ This file allows the user to play on an Etch-A-Sketch on their terminal. The use
 
 ## How to start
 cd into the correct directory then enter this line
-'''bash
+```bash
 $ python3 hw01.py
-'''
+```
 
 ## Use
 The first thing you will see is:
-'''python
+```python
 Enter a Matrix Size:
-'''
+```
 The input 'a' will create an axa matrix that will be the Etch-A-Sketch size
 
 Next you will be asked:
