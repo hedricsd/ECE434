@@ -1,0 +1,23 @@
+PYTHON SCRIPT
+1.) What period and frequency is it?
+    period = 155.0microseconds / freq = 6.4 kHz
+    
+2.) Run htop and see how much processor you are using.
+    96.2% CPU
+    
+
+C FILE
+1.) What period and frequency is it?
+    Could not get working
+    
+2.) Run htop and see how much processor you are using.
+    Could not get working
+    
+3.) Present the shell script, Python script, and C file results in a table for easy comparison.
+    shell script - 190 microseconds / 5.25 kHz / 94.3% CPU
+    Python Script - 155.0microseconds / 6.4 kHz / 96% CPU 
+    C File - N/A
+    toggle1.py - 18 microseconds / 56 kHz / 96.8% CPU
+    toggle1.c - 3.5 micorseconds / 291 kHz / 97.5% CPU
+    toggle2.py - 16 microseconds / 53 kHz / 97.5% CPU
+    toggle2.c - 3.8 microseconds / 260 kHz / 97.5% CPU
