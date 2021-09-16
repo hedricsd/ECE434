@@ -42,7 +42,7 @@ This file allows the user to play on an Etch-A-Sketch on their terminal. The use
 ## How to start
 cd into the correct directory then enter this line
 ```bash
-$ ./hw01.py
+$ ./hw02.py
 ```
 ## Use
 The first thing you will see is:
