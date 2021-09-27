@@ -2,6 +2,7 @@
 
 import numpy as np
 import Adafruit_BBIO.GPIO as GPIO
+from Adafruit_BBIO.Encoder import RotaryEncoder, eQEP2, eQEP0
 import time
 import smbus
 
@@ -12,6 +13,20 @@ cols = 8
 size = 8
 curX = 0
 curY = 0
+
+myEncoder = RotaryEncoder(eQEP2)
+myEncoder.setAbsolute()
+myEncoder.enable()
+
+myEncoder2 = RotaryEncoder(eQEP0)
+myEncoder2.setAbsolute()
+myEncoder2.enable()
+
+xPosition = myEncoder.position
+yPosition = myEncoder2.position
+upOrDown = 0
+
+
 
 # Variables used in LED matrix and Temp sensors
 matrix = 0x70
@@ -50,6 +65,24 @@ def printMatrix(a):
     picture[curX*2 + 1] = 2 ** curY # Turns on the red LED at curX, curY
     bus.write_i2c_block_data(matrix, 0, picture)
 
+def changePosition(xPosition, yPosition, curX, curY):
+    if myEncoder.position > xPosition:
+        if(curX > 0):
+            curX-=1
+    elif myEncoder.position < xPosition:
+        if(curX < size - 1):
+            curX+=1
+    elif myEncoder2.position < yPosition:
+        if(upOrDown == 0):
+            if(curY < size - 1):
+                curY+=1
+        else:
+            if(curY > 0):
+                curY-=1
+    array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
+    xPosition = myEncoder.position
+    yPosition = myEncoder2.position
+    return array, xPosition, yPosition, curX, curY
 
 # Initiallizing array
 array = clearArray(rows, cols, curX, curY)
@@ -84,41 +117,58 @@ while(1):
     bottomTemp = bottomTemp*9/5 + 32
     
     # If the top temperature sensor is too high, LED goes all Red
-    if(topTemp > 79.5):
+    if(topTemp > 76.5):
         picture = [0x00, 0xFF, 0x00, 0xFF, 0x00, 0xFF, 0x00, 0xFF,
     0x00, 0xFF, 0x00, 0xFF, 0x00, 0xFF, 0x00, 0xFF]
         bus.write_i2c_block_data(matrix, 0, picture)
-        print("OVERHEATING!!! Please Reset.")
+        print("OVERHEATING!!!")
     # If the bottom temperature sensor is too high, LED matrix resets
-    if(bottomTemp > 79.5):
+    if(bottomTemp > 76.5):
         print("Resetting")
         array = clearArray(rows, cols, curX, curY)
         printMatrix(array)
-
-    # detects up movement
-    if(GPIO.event_detected(pb1)):
-        if(curX < size - 1):
-            curX+=1
-        array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
-        printMatrix(array) # reprints the new updated matrix
-        
-    # detects left movement
-    if(GPIO.event_detected(pb2)):
-        if(curY < size - 1):
-            curY+=1
-        array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
-        printMatrix(array) # reprints the new updated matrix
     
-    # detects right movement   
-    if(GPIO.event_detected(pb3)):
-        if(curY > 0):
-            curY-=1
-        array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
-        printMatrix(array) # reprints the new updated matrix
         
-    #detects down movement
-    if(GPIO.event_detected(pb4)):
-        if(curX > 0):
-            curX-=1
-        array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
-        printMatrix(array) # reprints the new updated matrix
+    array, xPosition, yPosition, curX, curY = changePosition(xPosition, yPosition, curX, curY)
+    printMatrix(array)
+    time.sleep(0.2)
+    
+    if(GPIO.event_detected(pb1)):
+        if(upOrDown == 0):
+            upOrDown = 1
+        else:
+            upOrDown = 0
+        myEncoder2.zero()
+    # cur_position = myEncoder.position
+    # cur_position2 = myEncoder2.position
+    # print(cur_position, cur_position2)
+    # time.sleep(0.5)
+    
+    
+    # # detects up movement
+    # if(GPIO.event_detected(pb1)):
+    #     if(curX < size - 1):
+    #         curX+=1
+    #     array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
+    #     printMatrix(array) # reprints the new updated matrix
+        
+    # # detects left movement
+    # if(GPIO.event_detected(pb2)):
+    #     if(curY < size - 1):
+    #         curY+=1
+    #     array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
+    #     printMatrix(array) # reprints the new updated matrix
+    
+    # # detects right movement   
+    # if(GPIO.event_detected(pb3)):
+    #     if(curY > 0):
+    #         curY-=1
+    #     array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
+    #     printMatrix(array) # reprints the new updated matrix
+        
+    # #detects down movement
+    # if(GPIO.event_detected(pb4)):
+    #     if(curX > 0):
+    #         curX-=1
+    #     array[curX, curY] = 1 # sets matrix value to 1 where the etch a sketch moves
+    #     printMatrix(array) # reprints the new updated matrix
