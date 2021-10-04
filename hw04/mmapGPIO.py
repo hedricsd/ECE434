@@ -27,6 +27,6 @@ mem[GPIO_OE:GPIO_OE+4] = struct.pack("<L", reg_status)
 
 while(True):
     mem[GPIO_SETDATAOUT:GPIO_SETDATAOUT+4] = struct.pack("<L", USR3)
-    time.sleep(0.5)
+    #time.sleep(0.5)
     mem[GPIO_CLEARDATAOUT:GPIO_CLEARDATAOUT+4] = struct.pack("<L", USR3)
-    time.sleep(0.5)
+    #time.sleep(0.5)
