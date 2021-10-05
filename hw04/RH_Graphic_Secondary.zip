@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+		<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+		<!-- title of the page -->
+		<title>
+			404 | Rose-Hulman
+		
+		</title>
+		
+		
+		  
+    <!-- include styles -->
+    <link href="/assets/styles/index.css" rel="stylesheet"/>
+    <link href="/assets/styles/course-catalog.css" rel="stylesheet"/>
+    <link href="/assets/styles/secondary-hh.css" rel="stylesheet"/>
+    <!-- favicons -->
+	<link href="https://www.rose-hulman.edu/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+	<link href="https://www.rose-hulman.edu/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+	<link href="https://www.rose-hulman.edu/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+	<link href="https://www.rose-hulman.edu/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+	<link href="https://www.rose-hulman.edu/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+	<link href="https://www.rose-hulman.edu/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+	<link href="https://www.rose-hulman.edu/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+	<link href="https://www.rose-hulman.edu/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+	<link href="https://www.rose-hulman.edu/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+	<link href="https://www.rose-hulman.edu/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+	<link href="https://www.rose-hulman.edu/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+	<link href="https://www.rose-hulman.edu/https://www.rose-hulman.edu/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+	<link href="https://www.rose-hulman.edu/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+	<link href="https://www.rose-hulman.edu/manifest.json" rel="manifest"/>
+    <script>
+        var displayFeed = false;
+    </script>
+    <!-- Load scripts via reqire.js test -->
+    
+    <script async="" data-main="/assets/scripts/main" src="/assets/scripts/libs/require/require.js"></script>
+    
+    
+<!-- Google Tag Manager -->
+
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WZCJP3'); 
+    </script>
+
+   
+
+	</head>
+	<body>
+		<noscript>Javascript must be enabled for the correct page display</noscript>
+		<div class="page page-wide-tier page-search">
+			<a class="skip hide-for-screen-reader" href="#main">Skip to content</a>
+			
+
+    <script>
+        var request = new XMLHttpRequest();
+        
+        request.open('GET', '/_includes/header.html', true);
+        
+        request.onload = function() {
+          if (request.status == 200) {
+            var resp = request.responseText;
+        
+            document.querySelector('div.page').insertAdjacentHTML('afterbegin', resp);
+    
+        	let renderSearchElement = function() {
+        	    google.search.cse.element.render(
+        	        {
+            	        div: "header-search",
+            	        tag: "searchbox"
+        	        });
+            };
+            
+            let myCallback = function() {
+            if (document.readyState == 'complete') {
+                    renderSearchElement();
+                } else {
+                    google.setOnLoadCallback(renderSearchElement, true);
+                }
+            };
+                window.__gcse = {
+                    callback: myCallback
+                };
+          }
+        };
+       request.send();
+    </script>
+
+
+
+
+			<div class="region tier-header-region">
+    <div class="region-holder">
+        <!-- Tier Page Secondary Header -->
+        <div class="tier-secondary-header" style="background-image: url(//www.rose-hulman.edu/assets/images/img-t1-secondary-utility.png);">
+            <div class="tier-secondary-header-holder">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="tier-secondary-header-content">
+                                <h1 class="tier-secondary-header-title">Rose-Hulman Site Search</h1>
+                                <!-- search -->
+                                <div class="search-block">
+                                    <gcse:searchbox enableHistory="true" enableAutoComplete="true"></gcse:searchbox>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- breadcrumbs -->
+            <!-- Breadcrumbs -->
+            <div class="breadcrumb">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon-home">
+                                <span class="hide-for-screen-reader">Home</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>Search</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+			<!-- "Content side" area -->
+			<div class="content-side" id="main">
+				<div class="region-holder">
+					<div class="content-container error-message">
+						<h3>Please accept our apologies!
+							
+							<br/>We can't seem to find the page you're looking for.
+						
+						</h3>
+						<p>What should I do?</p>
+						<ol>
+							<li>Please use the Search Box above to find what you were looking for, or;</li>
+							<li>Visit the Home Page and try to browse to the page again.</li>
+						</ol>
+
+Still no luck?
+						
+						<br/>
+						<br/>
+						<p>You can also contact 
+							
+							<a href="mailto:webmaster@rose-hulman.edu">webmaster@rose-hulman.edu.</a> Please include the URL you tried to visit and the page with the referencing link.
+						
+						</p>
+					</div>
+				</div>
+				<!-- "Search results" region -->
+				<div class="region search-results-region">
+					<div class="region-holder">
+						<!-- Search Results -->
+						<section class="content-container search-results">
+							<div class="content-container-holder">
+								<div class="search-results-list">
+									<gcse:searchresults></gcse:searchresults>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="virtual-tour">
+				<a alt="Launch Experience" href="https://www.youvisit.com/#/vte/?data-platform=v&amp;data-link-type=immersive&amp;data-inst=62923&amp;data-loc=143593&amp;data-stopid=281915&amp;data-image-width=100%&amp;data-image-height=100%&amp;">Launch Root Quad</a>
+			</div>
+			
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container is-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="footer-logo">
+                        <img alt="Rose-Hulman Institute of Technology" src="/assets/images/logo-footer.svg"/>
+                        <div class="footer-logo-address">
+                            <strong class="footer-logo-text">Rose-Hulman<br/>Institute of Technology</strong>
+                                                                                                <span>5500 Wabash Avenue</span>
+                                                                                                                                <span>Terre Haute, IN 47803</span>
+                                                                                                                                <a href="tel:812-877-1511">812-877-1511</a>
+                                                                                    </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <ul class="footer-btns">
+                        
+                            <li><a class="btn btn-is-light" href="/visit/index.html">Schedule a visit</a></li>
+                        
+                            <li><a class="btn btn-is-light" href="https://admissions.rose-hulman.edu/register/?id=6096528b-a5b2-48f5-80d5-b9b9f80c27a8">Get Info</a></li>
+                        
+                            <li><a class="btn btn-is-light" href="/about-us/community-and-public-services/institutional-advancement/ways-to-give.html">Give</a></li>
+                        
+                            <li><a class="btn btn-is-light" href="/about-us/get-to-know-rose-hulman/contact-RHIT.html">Contact us</a></li>
+                        
+                            <li><a class="btn btn-is-light" href="/admissions-and-aid/the-application-process/application-and-deadlines/apply.html">Apply</a></li>
+                                            </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="social-container">
+                        <ul class="social">
+                            
+                                                        
+                            
+                            
+                            <li><a class="btn btn-is-light" href="https://twitter.com/rosehulman" target="_blank" title="Twitter opens in a new window.">
+                                <span class="icon icon-twitter"><span class="hide-for-screen-reader">Twitter</span></span>
+                            </a></li>
+                            <li><a class="btn btn-is-light" href="https://www.instagram.com/rosehulman/" target="_blank" title="Instagram opens in a new window.">
+                                <span class="icon icon-instagram"><span class="hide-for-screen-reader">Instagram</span></span>
+                            </a></li>
+                            <li><a class="btn btn-is-light" href="https://www.facebook.com/rosehulman" target="_blank" title="Facebook opens in a new window.">
+                                <span class="icon icon-facebook"><span class="hide-for-screen-reader">Facebook</span></span>
+                            </a></li>
+                            <li><a href="http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/engineering-no-doctorate" target="_blank" title="Generic Colleges National Universities opens in a new window."><img alt="Generic Colleges National Universities" src="/assets/images/generic-colleges-national-universities.png"/></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block">
+                        
+                        <h3>Quick Links</h3>
+                        <ul>
+                            
+                                <li><a href="/about-us/get-to-know-rose-hulman/contact-RHIT.html">Offices &amp; Services</a></li>
+                            
+                                <li><a href="/academics/learning-and-research-facilities/logan-library/index.html">Logan Library</a></li>
+                            
+                                <li><a href="http://athletics.rose-hulman.edu/landing/index">Athletics</a></li>
+                            
+                                <li><a href="https://rosehulman.sharepoint.com/sites/MyRH">My Rose-Hulman</a></li>
+                            
+                                <li><a href="/admissions-and-aid/financial-aid/cares-act.html">Cares Act</a></li>
+                            
+                                <li><a href="/admissions-and-aid/financial-aid/heerf-II.html">HEERF II</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="footer-block">
+                        
+                        <h3>Information For:</h3>
+                        <ul>
+                            
+                                <li><a href="/admissions-and-aid/early-planning/index.html">Future Students</a></li>
+                            
+                                <li><a href="/admissions-and-aid/for-incoming-freshmen/index.html">Incoming Freshmen</a></li>
+                            
+                                <li><a href="https://rosehulman.sharepoint.com/sites/MyRH">Current Students</a></li>
+                            
+                                <li><a href="/academics/degrees-and-programs/graduate-studies/index.html">Graduate Students</a></li>
+                            
+                                <li><a href="/campus-life/student-affairs/parents-association.html">Parents</a></li>
+                            
+                                <li><a href="/alumni-and-friends/index.html">Alumni &amp; Friends</a></li>
+                            
+                                <li><a href="https://rosehulman.sharepoint.com/sites/Resources/SitePages/Home.aspx">Faculty &amp; Staff</a></li>
+                            
+                                <li><a href="/about-us/community-and-public-services/index.html">Community Members</a></li>
+                            
+                                <li><a href="/about-us/community-and-public-services/communications-and-marketing/media-center.html">Media</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container is-maroon is-compact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Copyright 2021 Rose-Hulman Institute of Technology</p>
+                    <ul class="footer-additional-nav">
+                                                    <li><a href="/about-us/get-to-know-rose-hulman/contact-RHIT.html">Contact</a></li>
+                                                    <li><a href="/about-us/community-and-public-services/emergency.html">Emergency</a></li>
+                                                    <li><a href="/about-us/human-resources/index.html">Employment</a></li>
+                                                    <li><a href="/visit/maps-and-directions/index.html">Map &amp; Directions</a></li>
+                                                    <li><a href="/privacy/index.html">Privacy</a></li>
+                                                    <li><a href="/about-us/human-resources/title-ix.html">Title IX</a></li>
+                                                    <li><a href="/about-us/get-to-know-rose-hulman/web/index.html">Accessibility</a></li>
+                                                    <li><a href="/admissions-and-aid/financial-aid/financial-aid-basics/consumer-information.html">Consumer Information</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5756f4304186bd48"></script -->
+
+			<a class="skip hide-for-screen-reader" href="#">Back to top</a>
+		</div>
+	</body>
+</html>
