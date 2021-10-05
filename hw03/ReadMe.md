@@ -37,3 +37,17 @@ If the top temperature sensor reaches a temperature above 79.5 degrees F, the LE
 
 # Reset Button
 If the bottom temperature sensor reaches a temperature above 79.5 degrees F, the LED matrix will reset. Similarly to if you shook a real Etch-a-Sketch. The current curson position will stay the same, but all your work will be erased.
+
+# hw03 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  5/5 | TMP101 
+|  3/3 |   | setup.sh
+|  2/2 |   | Documentation 
+|  5/5 | Etch-a-Sketch
+|  3/3 |   | setup.sh
+|  2/2 |   | Documentation
+| 20/20 | **Total**
+
+Very well done.  No problem not getting the overtemp interupt working.
