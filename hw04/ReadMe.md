@@ -3,6 +3,7 @@
 - GPIO via mmap
 - i2c via the Kernel Driver
 - Control the LED matrix from a browser
+- LCD Display
 
 ## Memory Map
 I attached my memory map that I created as MemoryMap.png
@@ -16,3 +17,6 @@ i2cKernel.sh runs a shell script that displays the temperature in milli-degrees 
 
 ## Control the LED matrix from a browser
 Using browserEtch.py my code creates a browser that has 5 buttons. Up, down, left, right, and shake. The directions move the cursor the ways you would expect and the shake button clears the etch-a-sketch like a real etch-a-sketch works.
+
+## LCD Display
+For my LCD display, I got to display Boris, Boris rotated 90 degrees, and Boris with text. I also played a RedsNightmare.mpg on the LCD display as well.
