@@ -19,4 +19,4 @@ bone$ make
 bone$ make clean
 ```
 
-
+It does look like the RT load has a bounded latency. The graphs I got matched the values I was expecting.
