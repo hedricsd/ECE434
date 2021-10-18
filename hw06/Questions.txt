@@ -1,0 +1,11 @@
+1.) National Instruments
+2.) PREEMT_RT makes linux into a real-time system. 
+3.) Mixed criticality is when tasks have distinct criticality levels. 
+4.) The driver may schedule non-real time events before real time ones. The driver stacks are shared between tasks in PREEMT_RT.
+5.) Delta. It is the time it takes from the event to occur until the relevant real time task executes.
+6.) Cyclictest tests take a timestamp at a beginning time, sleeps, and then takes another time stamp. The goal is to measure the differnce between the intented delta time and the actual delta time. 
+7.) A histogram of the cyclictest between preemt and preemt_rt. 
+8.) Dispatch latency is the amount of time it takes for a system to respond to a request to begin operation. Scheduling latency is the time it takes for the scheduler being made aware of a task to the CPU actually running the task.
+9.) The mainline model has long running interrupts that are executed in hardIRQ context. The non-critical interrupts need to finish which creates dispatch latencies.
+10.) The low priority interrupt needs to finish executing before the external event can begin.
+11.) IRQ threads are forced which means that there are little shims of code that are executed in the preempt threads.
