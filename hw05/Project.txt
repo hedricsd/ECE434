@@ -1,0 +1,5 @@
+The project that I am interested in doing is a automated game board. We are going to start with an 
+automated Tik-Tok-Toe board that takes an input of a square and uses a magnetic stepper motor to move
+a magnetic piece to the desired place on the board. If that goes well and we have the time, we want 
+to move onto an automated chess game. The biggest worry we have with this one is physical size to get
+the complete chess board.
