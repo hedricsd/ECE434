@@ -20,3 +20,18 @@ bone$ make clean
 ```
 
 It does look like the RT load has a bounded latency. The graphs I got matched the values I was expecting.
+
+# hw06 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  2/2 | Project 
+|  5/5 | Questions
+|  4/4 | PREEMPT_RT
+|  2/2 | Plots to 500 us
+|  5/5 | Plots - Heavy/Light load
+|  2/2 | Extras
+| 20/20 | **Total**
+
+*My comments are in italics. --may*
+
