@@ -6,7 +6,7 @@
 - Accelerometer
 
 ## Project
-I added a project idea to the EBC page.
+I added a project idea to the EBC page. I also created a Projects.txt file that go a little in depth with my project idea.
 
 ## Make
 The make file I created as well as app.c are in the make folder
