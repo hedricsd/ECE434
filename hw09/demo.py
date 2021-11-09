@@ -72,7 +72,7 @@ def main():
 
     # Call the Sheets API
     sheet = service.spreadsheets()
-    values = [ [time.time()/60/60/24+ 25569 - 4/24, ]]
+    values = [ [time.time()/60/60/24+ 25569 - 4/24, int(temp1Value)/1000, int(temp2Value)/1000, int(temp3Value)/1000]]
     body = {'values': values}
     result = sheet.values().append(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                 range=SAMPLE_RANGE_NAME,
