@@ -12,4 +12,4 @@ tempTest.py takes the reading of all three of my temperature sensors and prints 
 ## Logging in Sheets
 ![image](https://user-images.githubusercontent.com/45342964/140851598-f39ef131-f65e-4cdb-95bb-49a393867ee5.png)
 
-I updated my sheets a couple times, with the last update holding my temperature sensors so that I would see a spike in the temperature.
+I updated my sheets a couple times using demo.py, with the last update holding my temperature sensors so that I would see a spike in the temperature.
