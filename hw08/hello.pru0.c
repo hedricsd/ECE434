@@ -16,15 +16,15 @@ void main(void) {
 	/* Clear SYSCFG[STANDBY_INIT] to enable OCP master port */
 	CT_CFG.SYSCFG_bit.STANDBY_INIT = 0;
 
-	for(i=0; i<15; i++) {
+	for(i=0; i<150000000000000; i++) {
 		gpio3[GPIO_SETDATAOUT]  = P931;	// The the USR3 LED on
 
-		// __delay_cycles(500000000/5);    	// Wait 1/2 second
-		__delay_cycles(0);
+		__delay_cycles(500000000/5);    	// Wait 1/2 second
+		// __delay_cycles(0);
 		gpio3[GPIO_CLEARDATAOUT] = P931;
 
-		// __delay_cycles(500000000/5); 
-		__delay_cycles(0);
+		__delay_cycles(500000000/5); 
+		// __delay_cycles(0);
 	}
 	__halt();
 }
