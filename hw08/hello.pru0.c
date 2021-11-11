@@ -10,19 +10,21 @@ void main(void) {
 	int i;
 
 	uint32_t *gpio1 = (uint32_t *)GPIO1;
+	uint32_t *gpio3 = (uint32_t *)GPIO3;
+	int P931 = 0x1<<14;
 	
 	/* Clear SYSCFG[STANDBY_INIT] to enable OCP master port */
 	CT_CFG.SYSCFG_bit.STANDBY_INIT = 0;
 
-	for(i=0; i<10; i++) {
-		gpio1[GPIO_SETDATAOUT]   = USR3;	// The the USR3 LED on
+	for(i=0; i<15; i++) {
+		gpio3[GPIO_SETDATAOUT]  = P931;	// The the USR3 LED on
 
-		__delay_cycles(500000000/5);    	// Wait 1/2 second
+		// __delay_cycles(500000000/5);    	// Wait 1/2 second
+		__delay_cycles(0);
+		gpio3[GPIO_CLEARDATAOUT] = P931;
 
-		gpio1[GPIO_CLEARDATAOUT] = USR3;
-
-		__delay_cycles(500000000/5); 
-
+		// __delay_cycles(500000000/5); 
+		__delay_cycles(0);
 	}
 	__halt();
 }
