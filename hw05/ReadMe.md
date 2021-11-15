@@ -19,3 +19,18 @@ I was able to get hello, ebbchar, and led working in ~/exploringBB/extras/kernel
 
 ## Accelerometer
 I have not gotten to this part of hw05 yet.
+
+# hw05 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  0/0 | Project 
+|  2/2 | Makefile
+|  6/6 | Kernel Source
+|  0/4 | Etch-a-Sketch
+|  8/8 | Kernel Modules: hello, ebbchar, gpio_test, led
+|  0/4 | Extras - Blink at different rates
+| 16/20 | **Total**
+-2 Late
+*My comments are in italics. --may*
+
