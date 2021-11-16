@@ -32,3 +32,14 @@ For this section, I read the button (Lower Waveform) and use that to turn on the
 ## Analog Wave Generator
 I did not get to this part of this hw.
 
+# hw08 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+| 14/14 | PRU
+|  2/2 | Controlling the PWM Frequency - optional
+|  2/2 | Reading an Input at Regular Intervals - optional
+|  0/2 | Analog Wave Generator - optional
+| 18/20 | **Total**
+
+*My comments are in italics. --may*

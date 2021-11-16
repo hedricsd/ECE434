@@ -13,3 +13,16 @@ tempTest.py takes the reading of all three of my temperature sensors and prints 
 ![image](https://user-images.githubusercontent.com/45342964/140851598-f39ef131-f65e-4cdb-95bb-49a393867ee5.png)
 
 I updated my sheets a couple times using demo.py, with the last update holding my temperature sensors so that I would see a spike in the temperature.
+
+# hw09 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  5/5 | Timeline
+|  3/3 | MAX31820
+| 9/10 | Logging to Sheets | URL to Sheet is missing
+|  2/2 | Extras
+| 19/20 | **Total**
+
+*My comments are in italics. --may*
+
