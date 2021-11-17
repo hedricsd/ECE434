@@ -20,4 +20,5 @@ To run this file, first run the setup.sh. Then you can run the FinalProject.py
 To learn more about this project please visit:
 
 [Our eLinux site](https://elinux.org/ECE434_Project_-_Cornhole_Board#Grading_Template)
+
 [Our hackster.io site](https://www.hackster.io/tristen-s-foisy/ece434-cornhole-board-eccd77)
