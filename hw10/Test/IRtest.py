@@ -9,7 +9,10 @@ buzzer = "P9_11"
 GPIO.setup(sensor, GPIO.IN)
 GPIO.setup(buzzer, GPIO.OUT)
 
+
 while True:
+    print(GPIO.input(sensor))
+    
     if GPIO.input(sensor): # 1 is object not detected
         GPIO.output(buzzer, GPIO.LOW)
     else:

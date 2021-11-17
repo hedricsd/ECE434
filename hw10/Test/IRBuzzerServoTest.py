@@ -29,17 +29,7 @@ servo_angle = {'-4':180,
     '2':60,
     '3':40,
     '4':20}
-    
-num = {'0':(1,1,1,0,1,1,1,0),
-    '1':(0,0,1,0,1,0,0,0),
-    '2':(1,1,0,1,1,0,1,0),
-    '3':(0,1,1,1,1,0,1,0),
-    '4':(0,0,1,1,1,1,0,0),
-    '5':(0,1,1,1,0,1,1,0),
-    '6':(1,1,1,1,0,1,1,0),
-    '7':(0,0,1,0,1,0,1,0),
-    '8':(1,1,1,1,1,1,1,0),
-    '9':(0,1,1,1,1,1,1,0)}
+
     
 duty_min = 3
 duty_max = 14.5
@@ -58,48 +48,12 @@ totalB=0
 currentA=0
 currentB=0
 current=0
-score=0
 totalThrows = 0
 GPIO.add_event_detect(button, GPIO.FALLING)
 
 try:
     while True:
-        GPIO.output(digits[0], 0)
-        GPIO.output(digits[1], 1)
-        GPIO.output(digits[2], 1)
-        GPIO.output(digits[3], 1)
-        i = 0
-        for val in num[str(math.trunc(totalA/10))]:
-            GPIO.output(segments[i], val)
-            i+=1
-        i = 0
-        sleep(0.0065)
-        GPIO.output(digits[0], 1)
-        GPIO.output(digits[1], 0)
-        GPIO.output(digits[2], 1)
-        GPIO.output(digits[3], 1)
-        for val in num[str(totalA%10)]:
-            GPIO.output(segments[i], val)
-            i+=1
-        i = 0
-        sleep(0.0065)
-        GPIO.output(digits[0], 1)
-        GPIO.output(digits[1], 1)
-        GPIO.output(digits[2], 0)
-        GPIO.output(digits[3], 1)
-        for val in num[str(math.trunc(totalB/10))]:
-            GPIO.output(segments[i], val)
-            i+=1
-        i = 0
-        sleep(0.0065)
-        GPIO.output(digits[0], 1)
-        GPIO.output(digits[1], 1)
-        GPIO.output(digits[2], 1)
-        GPIO.output(digits[3], 0)
-        for val in num[str(totalB%10)]:
-            GPIO.output(segments[i], val)
-            i+=1
-        sleep(0.0065)
+        
 
         if(GPIO.event_detected(button)):
             sleep(.1)
